@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import SearchBar from './SearchBar'
 import Shelf from './Shelf'
 
 class App extends Component {
@@ -6,6 +7,7 @@ class App extends Component {
         return (
             <div>
                 <h1>Book Tracking App</h1>
+                <SearchBar/>
                 <Shelf
                     title='Currently Reading'
                 />
