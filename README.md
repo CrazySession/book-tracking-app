@@ -1,7 +1,7 @@
 # Book Tracking App
 ## Udacity React Nanodegree
 
-This is a project I create for  [Link](https://www.udacity.com/course/react-nanodegree--nd019)
+This is a project I create for  [Nanodegree React](https://www.udacity.com/course/react-nanodegree--nd019)
 
 ## Functionality
 
