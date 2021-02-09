@@ -10,12 +10,15 @@ class App extends Component {
     }
 
     componentDidMount(){
-        this.setState(() => ({
-            books : getAll()
-        }));
+        getAll().then(result =>
+            this.setState(() => ({
+                books : result
+            })
+        ));
     }
 
     render(){
+        console.log(this.state.books);
         return (
             <div>
                 <h1>Book Tracking App</h1>
