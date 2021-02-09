@@ -1,8 +1,20 @@
 import React, {Component} from 'react'
 import SearchBar from './SearchBar'
 import Shelf from './Shelf'
+import {getAll} from '../utils/BooksApi'
 
 class App extends Component {
+    constructor(props){
+        super(props);
+        this.state = { books : [] };
+    }
+
+    componentDidMount(){
+        this.setState(() => ({
+            books : getAll()
+        }));
+    }
+
     render(){
         return (
             <div>
